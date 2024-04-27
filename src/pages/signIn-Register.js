@@ -6,7 +6,7 @@ const SignInPage = () => {
 
   const handleSignIn = async () => {
     try {
-      const response = await axios.get(
+      const response = await axios.post(
         `https://expense-tracker-back-1.onrender.com/users/get`,
         signInData
       );
