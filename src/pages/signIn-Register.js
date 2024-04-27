@@ -7,7 +7,7 @@ const SignInPage = () => {
   const handleSignIn = async () => {
     try {
       const response = await axios.get(
-        `${process.env.NODE_URL}/users/get`,
+        `https://expense-tracker-back-1.onrender.com/users/get`,
         signInData
       );
       console.log("Sign in successful:", response);
