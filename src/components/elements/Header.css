@@ -1,0 +1,139 @@
+header {
+  display: flex;
+  align-items: center;
+  height: 20svh;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  background-color: white;
+}
+
+.dollar {
+  padding-right: 0.75rem;
+}
+
+.hamburger-fill {
+  fill: #ffdb58;
+}
+
+.animated-icon {
+  background-color: inherit;
+}
+
+@media screen and (orientation: landscape) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .h1-font-size {
+    font-size: 2rem;
+  }
+
+  .h1-width {
+    width: 50%;
+  }
+
+  .justify-icon-container {
+    justify-content: center;
+  }
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+    perspective: 1000px;
+    width: 50%;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  /* .header-left-padding {
+    padding-left: 0.75rem;
+  } */
+
+  .h1-font-size {
+    font-size: 1.5rem;
+  }
+
+  .justify-icon-container {
+    justify-content: space-around;
+  }
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.75rem;
+}
+@keyframes squash {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 0.7);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    fill: grey; /* Start color, adjust as needed */
+  }
+  33% {
+    fill: #33d1ab; /* End color, adjust as needed */
+  }
+  66% {
+    fill: grey; /* Start color, adjust as needed */
+  }
+
+  100% {
+    fill: #33d1ab; /* End color, adjust as needed */
+  }
+}
+
+@keyframes sideToSide {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+.squash-animation {
+  animation: squash 2s ease-in-out infinite;
+}
+
+.color-change-animation {
+  animation: colorChange 2s infinite;
+}
+
+.side-to-side-animation {
+  animation: sideToSide 0.5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.savings-fill {
+  fill: #9d4edd;
+}
+
+.animated-icon {
+  margin: 0 10px;
+  font-size: 48px; /* Adjust size as needed */
+}

@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --color-yollow: #f9c74f;
+  --color-purple: #9d4edd;
+}
+
+* > * {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  padding: 4em 0;
+}
+
+.bg-yellow {
+  background-color: var(--color-yollow);
+}
+
+.bg-purple {
+  background-color: var(--color-purple);
+}
+
+.chart .title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-input {
+  @apply mt-1 block w-full py-2 px-3 border border-gray-200 bg-white rounded-md focus:outline-none focus:ring-indigo-500 sm:text-sm;
+}
+
+.item-box:hover .remove-item-box {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.modal {
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 385px;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  height: 310px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+.addAnotherTransaction {
+  position: fixed;
+  font-weight: bold;
+  right: 50%;
+  bottom: 10vh;
+  transform: translateX(50%);
+  transition: visibility 150ms, opacity 150ms;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  padding: 0.3em;
+  cursor: pointer;
+}
+
+.addFirstTransaction {
+  position: fixed;
+  font-weight: bold;
+  right: 50%;
+  bottom: 84%;
+  transform: translate(50%, 50%);
+  transition: visibility 150ms, opacity 150ms;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  padding: 0.3em;
+  cursor: pointer;
+}
+
+.Investment {
+  background-color: #33d1ab;
+}
+.Expense {
+  background-color: #ffc844;
+}
+.Savings {
+  background-color: #bd7bff;
+}
+
+.eraseContainer {
+  position: absolute;
+  transform: translate(0%, -50%);
+  font-weight: bold;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 150ms, opacity 150ms;
+  width: 25px;
+  height: 25px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  padding: 0.3em;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.listLogoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 1em 0.5em;
+}
+
+.labelLogoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em 0 0 0;
+}
+
+.nameAmountContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1em;
+  flex: 1;
+  align-items: flex-start;
+}
+
+.transactionContainer {
+  border-radius: 20px;
+  position: relative;
+  min-height: 80px;
+  width: 80%;
+  max-width: 320px;
+  margin: 0px auto;
+}
+
+.labelContainer {
+  border-radius: 20px;
+  padding: 1em;
+}
+
+.nameTotalContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-between;
+  flex: 1;
+  align-items: flex-start;
+}

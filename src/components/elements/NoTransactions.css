@@ -1,0 +1,31 @@
+.no-transactions-container {
+  height: 80svh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes borderColorChange {
+  0% {
+    border: 1px solid white;
+  }
+  33% {
+    border: 5px solid black;
+  }
+  66% {
+    border: 1px solid white;
+  }
+
+  100% {
+    border: 5px solid black;
+  }
+}
+
+.no-transactions-border-animation {
+  animation: borderColorChange 0.5s ease-in-out infinite;
+}
