@@ -16,7 +16,6 @@ export default function List() {
     const [currentTransactionsArray, setCurrentTransactionsArray] = useState([]);
 
     const deleteTask = (e) => {
-        console.log('delete')
         dispatch(removeTransaction(e.target.dataset.id))
     }
 

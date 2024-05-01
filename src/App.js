@@ -21,9 +21,7 @@ function App() {
     dispatch(setTransactionFromLocalStorage(dataLocal));
   }, []);
 
-  useEffect(()=>{
-    console.log(selectTransactions)
-  },[selectTransactions])
+
 
   const [toggle, setToggle] = useState(false);
 
@@ -48,7 +46,6 @@ function App() {
   }
   
   function myFunction() {
-    console.log('Interval function is running...');
   }
 
 

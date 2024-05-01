@@ -26,14 +26,6 @@ export default function Labels() {
             return selectTransactions
         });
     }, [selectTransactions]);
-
-
-
-
-
-
-    /*              <h3 className='font-bold'>{Math.round(data.percent) ?? 0}%</h3>
-*/
     
 
 

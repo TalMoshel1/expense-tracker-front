@@ -7,10 +7,10 @@ const SignInPage = () => {
   const handleSignIn = async () => {
     try {
       const response = await axios.post(
-        `https://expense-tracker-back-1.onrender.com/users/get`,
+        `http://localhost:3000/users/get`,
         signInData
       );
-      console.log("Sign in successful:", response);
+      sessionStorage.setItem('token',response.data.token)
     } catch (error) {
       console.error("Error signing in:", error);
     }

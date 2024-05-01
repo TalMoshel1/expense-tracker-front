@@ -1,0 +1,79 @@
+.sign-up-page {
+    width: 30vw;
+    margin: 10vh auto;
+    padding: 3vh;
+    border: 1px solid #ddd;
+    border-radius: 0.8vh;
+    box-shadow: 0 0 2vh rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+  
+  .sign-up-page h1 {
+    margin-bottom: 2vh;
+  }
+  
+  .sign-up-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+  }
+  
+  .sign-up-page label {
+    display: block;
+    margin-bottom: 0.5vh;
+  }
+  
+  .sign-up-page input[type="email"],
+  .sign-up-page input[type="password"],
+  .sign-up-page input[type="text"] {
+    width: 100%;
+    padding: 1vh;
+    border: 1px solid #ccc;
+    border-radius: 0.8vh;
+    box-sizing: border-box;
+  }
+  
+  .sign-up-page input[type="checkbox"] {
+    margin-right: 1vw;
+  }
+  
+  .sign-up-page button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 1.2vh 2vw;
+    border: none;
+    border-radius: 0.8vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .sign-up-page button[type="submit"]:hover {
+    background-color: #388e3c;
+  }
+  
+  .sign-up-or {
+    margin: 3vh 0;
+    text-align: center;
+  }
+  
+  .sign-up-or span {
+    display: inline-block;
+    padding: 1vh;
+    border: 1px solid #ddd;
+    border-radius: 0.8vh;
+  }
+  
+  .sign-up-options {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+  }
+  
+  .sign-up-options a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+    height: 8vw;
+  }
+  
