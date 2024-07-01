@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header>
       <h1 className="header header-left-padding  h1-font-size h1-width ">
-       <div className='dollar' style={{color:'green'}}>$</div> Expanse Tracker
+       <div className='dollar' style={{color:'green'}}>$</div> Expense Tracker
       </h1>
       <div className="icon-container justify-icon-container">
         <PiHamburger className="animated-icon hamburger-fill squash-animation" />
